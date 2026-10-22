@@ -1,0 +1,19 @@
+name: Sims Limited MCP Server
+type: MCPServer
+generated: '2026-10-22'
+method: none
+status: absent
+description: >-
+  No official hosted or local MCP server from Sims Limited was found. The corporate site
+  (www.simsltd.com) publishes no developer portal, API documentation or OpenAPI contract
+  (pre-flight contract discovery on simsltd.com, www.simsltd.com, careers.simsltd.com and
+  api.simsltd.com found no OpenAPI, AsyncAPI, GraphQL or MCP), so no candidate tool list
+  could be derived either. A web search for a Sims Limited MCP server returned only
+  unrelated products (sim.ai, S-IMSY, community servers).
+source:
+- https://www.simsltd.com/
+deployment:
+  mode: none
+  auth: unknown
+  verified: searched
+tools: []

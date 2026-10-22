@@ -1,23 +1,85 @@
 aid: sims-limited
-name: Sims
-description: 'Sims is a company surfaced via the API Evangelist harvest backlog (source: australia-apidays-2026)
-  and added to the network as a stub for full-pipeline profiling.'
+
+name: Sims Limited
+
+description: Sims Limited is an ASX-listed global recycling company whose story began in 1917 with a single scrap metal yard in Sydney, Australia. The parent company took the name Sims Limited in 2020 to reflect the breadth of its businesses, including Sims Metal and Sims Lifecycle Services, which extend the life of discarded goods through advanced recycling and repurposing. Its stated purpose is to 'create a world without waste to preserve our planet'. Surfaced via the API Evangelist harvest backlog (australia-apidays-2026); its corporate site publishes no developer portal, API documentation or public API.
+
 url: https://raw.githubusercontent.com/api-evangelist/sims-limited/refs/heads/main/apis.yml
+
 x-type: company
+
 x-source: harvest:australia-apidays-2026
-x-tier: stub
-x-tier-reason: harvest
+
+x-tier: profiled
+x-tier-reason: enrichment pass 2026-10-22 (modular-v1; was harvest)
+
 specificationVersion: '0.20'
+
 created: '2026-10-22'
+
 modified: '2026-10-22'
+
 tags:
 - Company
-apis: []
+- Recycling
+- Metal Recycling
+- Circular Economy
+- Sustainability
+- Australia
+- ASX Listed
+
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+
+image: https://www.simsltd.com/wp-content/uploads/sites/18/2025/04/home-hero.jpg
+
 common:
+- type: Hosts
+  url: hosts/sims-limited-hosts.yml
+- type: Vendors
+  url: vendors/sims-limited-vendors.yml
+- type: Leadership
+  url: https://www.simsltd.com/leadership/
+- type: DomainSecurity
+  url: security/sims-limited-domain-security.yml
 - type: Website
-  url: https://simsltd.com/
+  url: https://www.simsltd.com/
+- type: About
+  url: https://www.simsltd.com/about/
+- type: Support
+  url: https://www.simsltd.com/contact/
+- type: Newsroom
+  url: https://www.simsltd.com/news/
+- type: Investors
+  url: https://www.simsltd.com/asx-filings/
+- type: Careers
+  url: https://careers.simsltd.com/
+- type: PrivacyPolicy
+  url: https://www.simsltd.com/privacy/
+- type: TermsOfService
+  url: https://www.simsltd.com/terms-of-use/
+- type: LinkedIn
+  url: https://www.linkedin.com/company/simslimited/
+
+apis: []
+
+x-coverage:
+  state: covered
+  reason: identity-verified
+  detail: Corporate site www.simsltd.com (og:site_name "Sims Limited") verified; no developer portal, API docs or public API published on the site.
+  evidence:
+  - url: https://simsltd.com/
+    status: 200
+  - url: https://www.simsltd.com/
+    status: 200
+  - url: https://www.simsltd.com/about/
+    status: 200
+x-enrichment:
+  date: '2026-10-22'
+  status: enriched
+  artifacts_added: 8
+  pass: modular-v1
+  engine: identity=anthropic,contract=anthropic,surfaces=anthropic,docs=anthropic,regulatory=anthropic

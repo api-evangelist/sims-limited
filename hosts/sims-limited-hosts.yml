@@ -1,0 +1,79 @@
+generated: '2026-10-22'
+method: derived
+source: the pre-flight dossier, apis.yml pointers, spec servers, well-known, vendors -- nothing fetched here
+generator: derive-hosts.py
+summary:
+  hosts: 5
+  own: 4
+  other_domain: 0
+  platform: 1
+  roles:
+  - api
+  - marketing
+  - other
+  - website
+hosts:
+- host: api.simsltd.com
+  found_by:
+  - contract-discovery
+  types: []
+  serves: []
+  registrable_domain: simsltd.com
+  role: api
+  relation: own
+- host: careers.simsltd.com
+  found_by:
+  - pointer
+  - probed
+  - site-links
+  - contract-discovery
+  - well-known
+  types:
+  - Careers
+  serves: []
+  registrable_domain: simsltd.com
+  role: marketing
+  relation: own
+- host: simsltd.com
+  found_by:
+  - probed
+  - contract-discovery
+  - well-known
+  types: []
+  serves: []
+  registrable_domain: simsltd.com
+  role: other
+  relation: own
+- host: www.linkedin.com
+  found_by:
+  - pointer
+  types:
+  - LinkedIn
+  serves: []
+  registrable_domain: linkedin.com
+  role: other
+  relation: platform
+- host: www.simsltd.com
+  found_by:
+  - pointer
+  - probed
+  - site-links
+  - contract-discovery
+  - well-known
+  - vendor-detect
+  types:
+  - Leadership
+  - Website
+  - About
+  - Support
+  - Newsroom
+  - Investors
+  - PrivacyPolicy
+  - TermsOfService
+  serves:
+  - cdn
+  - hosting
+  vendor: cloudflare
+  registrable_domain: simsltd.com
+  role: website
+  relation: own

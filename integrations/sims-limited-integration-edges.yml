@@ -1,0 +1,22 @@
+generated: '2026-10-22'
+method: none
+source:
+- https://zapier.com/apps/sims-limited/integrations
+- https://n8n.io/integrations/sims-limited/
+- https://composio.dev/toolkits/sims-limited
+- https://monid.ai/tools/sims-limited
+checked:
+- https://zapier.com/apps/sims-limited/integrations
+- https://n8n.io/integrations/sims-limited/
+- https://www.make.com/en/integrations/sims-limited
+- https://www.simsltd.com/
+- https://www.simsltd.com/page-sitemap.xml
+- https://composio.dev/toolkits/sims-limited
+- https://monid.ai/tools/sims-limited
+summary: null
+marketplace_apps: []
+edges: []
+templates: []
+note: 'Sims Limited is a recycling company with no public API, developer portal or integrations/partner-app page;
+  no marketplace listing was found. Probe statuses: zapier 404, n8n 404, make.com 403 (bot wall, inconclusive),
+  simsltd.com 200 (no API/integration content).'
